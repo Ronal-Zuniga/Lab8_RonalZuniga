@@ -4,7 +4,7 @@ package examen1_ronalzuniga;
 import java.util.ArrayList;
 
 public class Persona {
-        private int id;
+    private int id;
     private String nombre;
     private int edad;
     private String sexo;
@@ -93,6 +93,6 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", civil=" + civil + ", peso=" + peso + ", altura=" + altura + ", m=" + m + '}';
+        return nombre;
     }
 }

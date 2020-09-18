@@ -8,13 +8,13 @@ public class General extends Persona{
     private String ocupacion;
     private double sueldo;
     private String horario;
-    private Date tiempo;
+    private String tiempo;
 
     public General() {
         super();
     }
 
-    public General(String ocupacion, double sueldo, String horario, Date tiempo, int id, String nombre, int edad, String sexo, String civil, double peso, double altura, ArrayList<Mensaje> m) {
+    public General(String ocupacion, double sueldo, String horario, String tiempo, int id, String nombre, int edad, String sexo, String civil, double peso, double altura, ArrayList<Mensaje> m) {
         super(id, nombre, edad, sexo, civil, peso, altura, m);
         this.ocupacion = ocupacion;
         this.sueldo = sueldo;
@@ -46,11 +46,11 @@ public class General extends Persona{
         this.horario = horario;
     }
 
-    public Date getTiempo() {
+    public String getTiempo() {
         return tiempo;
     }
 
-    public void setTiempo(Date tiempo) {
+    public void setTiempo(String tiempo) {
         this.tiempo = tiempo;
     }
 
