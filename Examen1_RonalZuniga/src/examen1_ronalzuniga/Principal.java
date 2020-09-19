@@ -6,7 +6,10 @@
 package examen1_ronalzuniga;
 
 import java.awt.Color;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JColorChooser;
 import javax.swing.JComboBox;
@@ -217,6 +220,28 @@ public class Principal extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         ta1 = new javax.swing.JTextArea();
         jButton25 = new javax.swing.JButton();
+        Archivos = new javax.swing.JDialog();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel82 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        ta2 = new javax.swing.JTextArea();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        view = new javax.swing.JDialog();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jButton31 = new javax.swing.JButton();
+        jLabel85 = new javax.swing.JLabel();
+        jButton32 = new javax.swing.JButton();
+        Contactos = new javax.swing.JDialog();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel86 = new javax.swing.JLabel();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        t3 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -1875,6 +1900,253 @@ public class Principal extends javax.swing.JFrame {
             .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel82.setFont(new java.awt.Font("Segoe UI", 3, 48)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(51, 0, 204));
+        jLabel82.setText("Historial de Mensajes");
+
+        ta2.setColumns(20);
+        ta2.setFont(new java.awt.Font("Rockwell", 0, 18)); // NOI18N
+        ta2.setRows(5);
+        jScrollPane4.setViewportView(ta2);
+
+        jButton26.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton26.setText("Mostrar Mensajes anteriores");
+        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton26MouseClicked(evt);
+            }
+        });
+
+        jButton27.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton27.setText("Mostrar Mensajes Nuevos");
+        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton27MouseClicked(evt);
+            }
+        });
+
+        jButton28.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton28.setText("Limpiar Área");
+        jButton28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton28MouseClicked(evt);
+            }
+        });
+
+        jButton29.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton29.setText("Eliminar Mensaje ");
+        jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton29MouseClicked(evt);
+            }
+        });
+
+        jButton30.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jButton30.setText("Guardar Nuevos Mensajes");
+        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton30MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel14Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel82)
+                .addGap(237, 237, 237))
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(158, 158, 158)
+                        .addComponent(jButton27)
+                        .addGap(142, 142, 142)
+                        .addComponent(jButton29))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel14Layout.createSequentialGroup()
+                                .addComponent(jButton26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton28)
+                                .addGap(90, 90, 90)
+                                .addComponent(jButton30))
+                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 915, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(31, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel82)
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 416, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton26)
+                    .addComponent(jButton28)
+                    .addComponent(jButton30))
+                .addGap(43, 43, 43)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton27)
+                    .addComponent(jButton29))
+                .addContainerGap(54, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout ArchivosLayout = new javax.swing.GroupLayout(Archivos.getContentPane());
+        Archivos.getContentPane().setLayout(ArchivosLayout);
+        ArchivosLayout.setHorizontalGroup(
+            ArchivosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        ArchivosLayout.setVerticalGroup(
+            ArchivosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel15.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel83.setFont(new java.awt.Font("Segoe UI", 3, 48)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel83.setText("¿Qué desea Visualizar?");
+
+        jLabel84.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen1_ronalzuniga/p.png"))); // NOI18N
+
+        jButton31.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jButton31.setText("Contactos");
+        jButton31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton31MouseClicked(evt);
+            }
+        });
+
+        jLabel85.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen1_ronalzuniga/chat.png"))); // NOI18N
+
+        jButton32.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
+        jButton32.setText("Mensajes Guardados en Archivos");
+        jButton32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton32MouseClicked(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(125, 125, 125)
+                .addComponent(jLabel83)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                        .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 343, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                        .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(160, 160, 160))))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel83)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(80, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout viewLayout = new javax.swing.GroupLayout(view.getContentPane());
+        view.getContentPane().setLayout(viewLayout);
+        viewLayout.setHorizontalGroup(
+            viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(viewLayout.createSequentialGroup()
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        viewLayout.setVerticalGroup(
+            viewLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jPanel16.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel86.setFont(new java.awt.Font("Segoe UI", 3, 48)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(0, 0, 204));
+        jLabel86.setText("Lista de Contactos");
+
+        t3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        t3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "Identificacion", "Nombre", "Cargo"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jScrollPane5.setViewportView(t3);
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(170, 170, 170)
+                .addComponent(jLabel86)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(81, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 602, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel86)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 395, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(49, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout ContactosLayout = new javax.swing.GroupLayout(Contactos.getContentPane());
+        Contactos.getContentPane().setLayout(ContactosLayout);
+        ContactosLayout.setHorizontalGroup(
+            ContactosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        ContactosLayout.setVerticalGroup(
+            ContactosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1905,6 +2177,11 @@ public class Principal extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         jButton3.setText("Visualizar");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/examen1_ronalzuniga/list11.png"))); // NOI18N
 
@@ -2181,7 +2458,7 @@ public class Principal extends javax.swing.JFrame {
         modArticulo.pack();
         modArticulo.setLocationRelativeTo(this);
         modArticulo.setVisible(true);
-        ActualizarModelo2(modA,ar);
+        ActualizarModelo2(modA, ar);
     }//GEN-LAST:event_jButton18MouseClicked
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
@@ -2244,14 +2521,14 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton21MouseClicked
 
     private void modAItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_modAItemStateChanged
-        tit1.setText(((Articulo)modA.getSelectedItem()).getTitulo());
-        descr.setText(((Articulo)modA.getSelectedItem()).getDescripcion());
+        tit1.setText(((Articulo) modA.getSelectedItem()).getTitulo());
+        descr.setText(((Articulo) modA.getSelectedItem()).getDescripcion());
         tit1.setEditable(false);
         descr.setEditable(false);
     }//GEN-LAST:event_modAItemStateChanged
 
     private void jButton22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MouseClicked
-       Articulo a = (Articulo) modA.getSelectedItem();
+        Articulo a = (Articulo) modA.getSelectedItem();
         Object[] t = {
             a.getTitulo(),
             a.getDescripcion(),
@@ -2274,7 +2551,7 @@ public class Principal extends javax.swing.JFrame {
             a.setTitulo(tit1.getText());
             a.setDescripcion(descr.getText());
             JOptionPane.showMessageDialog(this, "Modificado correctamente");
-            ActualizarModelo2(modA,ar);
+            ActualizarModelo2(modA, ar);
         } else {
             JOptionPane.showMessageDialog(this, "Contraseña incorrecta, intente de nuevo");
         }
@@ -2287,7 +2564,7 @@ public class Principal extends javax.swing.JFrame {
             if (ar.contains(a)) {
                 ar.remove(a);
             }
-            ActualizarModelo2(modA,ar);
+            ActualizarModelo2(modA, ar);
             JOptionPane.showMessageDialog(this, "Eliminado correctamente");
         } else {
             JOptionPane.showMessageDialog(this, "Contraseña incorrecta, intente de nuevo");
@@ -2307,13 +2584,110 @@ public class Principal extends javax.swing.JFrame {
         Persona e = (Persona) emisor.getSelectedItem();
         Persona r = (Persona) receptor.getSelectedItem();
         if (ps.contains(r)) {
-            Mensaje m = new Mensaje(ta1.getText(),e,r);
+            Mensaje m = new Mensaje(ta1.getText(), e.getNombre(), r.getNombre());
             r.getM().add(m);
+            mj.add(m);
         }
         JOptionPane.showMessageDialog(this, "Enviado correctamente");
         ActualizarModelo(emisor, ps);
         ActualizarModelo(receptor, ps);
     }//GEN-LAST:event_jButton25MouseClicked
+
+    private void jButton26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseClicked
+        adminMensajes am = new adminMensajes("./Mensajes.txt");//Carga y muestra en el text area los mensajes que se guardaron previamente en el archivo
+        am.cargarArchivo();
+        ArrayList<Mensaje> a = am.getM();
+        String salida = "";
+        for (int i = 0; i < a.size(); i++) {
+            salida += a.get(i) + "\n";
+        }
+        ta2.append(salida);
+    }//GEN-LAST:event_jButton26MouseClicked
+
+    private void jButton28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MouseClicked
+        ta2.setText("");//limpia el text area
+    }//GEN-LAST:event_jButton28MouseClicked
+
+    private void jButton27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseClicked
+        String salida = ""; //muestra los nuevos mensajes ingresados durante la ejecucuion del programa
+        for (int i = 0; i < mj.size(); i++) {
+            salida += mj.get(i) + "\n";
+        }
+        ta2.append(salida);
+    }//GEN-LAST:event_jButton27MouseClicked
+
+    private void jButton29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MouseClicked
+        adminMensajes am = new adminMensajes("./Mensajes.txt");//Carga y muestra en el text area los mensajes que se guardaron previamente en el archivo
+        am.cargarArchivo();                                    //y permite al usuario seleccionar una posicion para eliminarlo del archivo
+        ArrayList<Mensaje> a = am.getM();
+        String salida = "";
+        for (int i = 0; i < a.size(); i++) {
+            salida += a.get(i) + "\n";
+        }
+        ta2.append(salida);
+        int p;
+        p = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Posicion de mensaje a eliminar: "));
+        am.getM().remove(p);
+        try {
+            am.escribirArchivo();
+            JOptionPane.showMessageDialog(this, "Eliminado correctamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton29MouseClicked
+
+    private void jButton30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseClicked
+        adminMensajes am = new adminMensajes("./Mensajes.txt");//guarda en el archivo existente los nuevos mensajes ingresados durante la ejecucuion del programa
+        am.cargarArchivo();
+        am.setM(mj);
+        try {
+            am.escribirArchivo();
+            JOptionPane.showMessageDialog(this, "Mensajes nuevos Guardados correctamente");
+        } catch (IOException ex) {
+            Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton30MouseClicked
+
+    private void jButton31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton31MouseClicked
+        for (int i = 0; i < ps.size(); i++) {
+            if (ps.get(i) instanceof Gerente) {
+                Gerente pr = (Gerente)ps.get(i);
+                Object[] t = {
+                    pr.getId(),
+                    pr.getNombre(),
+                    pr.getCargo(),
+                };
+                DefaultTableModel md = (DefaultTableModel) t3.getModel();
+                md.addRow(t);
+                t3.setModel(md);
+            }
+            if (ps.get(i)instanceof General) {
+                General pr = (General)ps.get(i);
+                Object[] t = {
+                    pr.getId(),
+                    pr.getNombre(),
+                    "Personal General",
+                };
+                DefaultTableModel md = (DefaultTableModel) t3.getModel();
+                md.addRow(t);
+                t3.setModel(md);
+            }
+        }
+    }//GEN-LAST:event_jButton31MouseClicked
+
+    private void jButton32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton32MouseClicked
+        Archivos.setModal(true);
+        Archivos.pack();
+        Archivos.setLocationRelativeTo(this);
+        Archivos.setVisible(true);
+    }//GEN-LAST:event_jButton32MouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        view.setModal(true);
+        view.pack();
+        view.setLocationRelativeTo(this);
+        view.setVisible(true);
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -2351,8 +2725,10 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JDialog Archivos;
     private javax.swing.JDialog Chat;
     private javax.swing.JDialog Comic;
+    private javax.swing.JDialog Contactos;
     private javax.swing.JDialog Figura;
     private javax.swing.JDialog Gerente;
     private javax.swing.JDialog Juego;
@@ -2405,7 +2781,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
     private javax.swing.JButton jButton25;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -2492,12 +2875,20 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -2509,6 +2900,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JComboBox<String> mod;
     private javax.swing.JDialog mod1;
@@ -2536,27 +2929,31 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField sueldo;
     private javax.swing.JTable t1;
     private javax.swing.JTable t2;
+    private javax.swing.JTable t3;
     private javax.swing.JTextArea ta1;
+    private javax.swing.JTextArea ta2;
     private javax.swing.JTextField tit1;
     private javax.swing.JTextField titulo;
     private javax.swing.JTextField titulo1;
     private javax.swing.JTextField titulo2;
     private javax.swing.JTextField usuario;
+    private javax.swing.JDialog view;
     private javax.swing.JSpinner volumen;
     // End of variables declaration//GEN-END:variables
     private ArrayList<Persona> ps = new ArrayList();
     private ArrayList<Articulo> ar = new ArrayList();
+    private ArrayList<Mensaje> mj = new ArrayList();
     private Color cl;
 
     public void ActualizarModelo(JComboBox caja, ArrayList<Persona> ps) {
         for (int i = 0; i < ps.size(); i++) {
             Persona p = ps.get(i);
-            DefaultComboBoxModel md = (DefaultComboBoxModel)caja.getModel();
+            DefaultComboBoxModel md = (DefaultComboBoxModel) caja.getModel();
             md.addElement(p.getNombre());
             caja.setModel(md);
         }
     }
-    
+
     public void ActualizarModelo2(JComboBox caja, ArrayList<Articulo> ar) {
         for (int i = 0; i < ar.size(); i++) {
             Articulo a = ar.get(i);
